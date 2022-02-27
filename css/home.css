@@ -1,6 +1,7 @@
 a{
     text-decoration: none;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 a:hover{
     color:white;
@@ -18,4 +19,5 @@ a:hover{
 }
 .fixed h1{
     margin:auto;
+    font-family: 'Montserrat', sans-serif;
 }

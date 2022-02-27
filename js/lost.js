@@ -1,6 +1,6 @@
 let form = document.getElementById("formhere");
 let list = document.getElementById("itemshere");
-function foundform() {
+function lostform() {
   form.style.display = "block";
   list.style.display = "none";
 }

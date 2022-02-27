@@ -4,8 +4,8 @@
     "description":"An web-app where you can add found/lost items so that all other students can see and help you.",
     "start_url":"/index.html",
     "display":"standalone",
-    "background_color":"orange",
-    "theme_color":"orange",
+    "background_color":"black",
+    "theme_color":"black",
     "orientation":"any",
     "scope":"./",
     "icons":[

@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+* {
+  font-family: "Comfortaa", cursive;
+  background: rgb(26, 25, 25);
+}
+
+h1 {
+  font-size: 4em;
+  color: antiquewhite;
+}
+
+.card {
+  background: rgba(177, 167, 167, 0.45);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: rgb(231, 255, 255);
+  min-width: 0.3fr;
+  height: 300px;
+  margin-top: 25px;
+}

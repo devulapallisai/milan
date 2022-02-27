@@ -105,20 +105,30 @@
     </div>
     <div class="itemshere" id="itemshere">
         <h1 class="m-2 text-center" style="overflow: hidden">Cab Sharing Peers</h1>
+        
+        <hr>
+        <br>
+        <div class="form-check form-switch justify-content-center">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Filter by Date</label>
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault1">
+            <input type="Date" id="Date" style="margin-left:20px;"/>
+            <button class="btn btn-success" style="margin-left:20px;" onclick="filterbydate()">Apply</button>
+        </div>
         <br>
         <table class="table table-striped">
             <thead>
                 <tr>
-                  <th scope="col">S.No</th>
-                  <th scope="col">Name who lost</th>
-                  <th scope="col">Item</th>
-                  <th scope="col">Image of Item</th>
-                  <th scope="col">Details of person</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">From</th>
+                  <th scope="col">To</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Contact No.</th>
                 </tr>
             </thead>
             <tbody id="innerhtmladd">
             </tbody>
           </table>
+
     </div>
     <script src="js/cab.js"></script>
   </body>

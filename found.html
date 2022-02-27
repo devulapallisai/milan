@@ -11,7 +11,6 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/Home.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -29,200 +28,64 @@
     <link rel="stylesheet" href="css/Header.css" />
   </head>
   <body>
-    <nav
-      id="navbar"
-      class="navbar navbar-expand-lg text-uppercase"
-      style="padding: 0; border: 2px solid rgb(240, 237, 237)"
-    >
-      <div class="px-3 py-2 bg-white text-white container-fluid">
-        <div class="container" style="font-family: 'Poppins'">
-          <div
-            class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-          >
-            <a
-              href="/"
-              class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none"
-            >
-              <div
-                class="text-dark"
-                style="font-weight: bolder; font-size: x-large"
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="index.html">Student Helper</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="found.html"
+                >Found</a
               >
-                Student Helper
-              </div>
-            </a>
-            <div class="d-sm-none d-block">
-              <svg
-                class="ham ham3"
-                id="toggler"
-                viewBox="0 0 100 100"
-                width="80"
-                onclick="handleclickchange()"
-              >
-                <path
-                  class="line top"
-                  d="m 70,33 h -40 c -11.092231,0 11.883874,13.496726 -3.420361,12.956839 -0.962502,-2.089471 -2.222071,-3.282996 -4.545687,-3.282996 -2.323616,0 -5.113897,2.622752 -5.113897,7.071068 0,4.448316 2.080609,7.007933 5.555839,7.007933 2.401943,0 2.96769,-1.283974 4.166879,-3.282995 2.209342,0.273823 4.031294,1.642466 5.857227,-0.252538 v -13.005715 16.288404 h 7.653568"
-                />
-                <path
-                  class="line middle"
-                  d="m 70,50 h -40 c -5.6862,0 -8.534259,5.373483 -8.534259,11.551069 0,7.187738 3.499166,10.922274 13.131984,10.922274 11.021777,0 7.022787,-15.773343 15.531095,-15.773343 3.268142,0 5.177031,-2.159429 5.177031,-6.7 0,-4.540571 -1.766442,-7.33533 -5.087851,-7.326157 -3.321409,0.0092 -5.771288,2.789632 -5.771288,7.326157 0,4.536525 2.478983,6.805271 5.771288,6.7"
-                />
-                <path
-                  class="line bottom"
-                  d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0"
-                />
-              </svg>
-            </div>
-            <ul
-              class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small targetit"
-              style="transform: scale(0.8)"
-            >
-              <li>
-                <a
-                  href="index.html"
-                  class="nav-link text-secondary hoverme"
-                  style="background-color: #ffe1e1"
-                >
-                  <fa class="icon1 fas fa-home d-block mx-1 mb-1"></fa>
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="extent_of_coverage.html"
-                  class="nav-link text-dark hoverme"
-                >
-                  <fa class="icon1 fas fa-photo-video d-block mx-5 mb-1"></fa>
-                  Media coverage
-                </a>
-              </li>
-              <li>
-                <a href="effects.html" class="nav-link text-dark hoverme">
-                  <fa class="icon1 fas fa-poll-h d-block mx-3 mb-1"></fa>
-                  Effects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="misinformation.html"
-                  class="nav-link text-dark hoverme"
-                >
-                  <fa
-                    class="icon1 fas fa-exclamation-triangle d-block mx-5 mb-1"
-                  ></fa>
-                  Misinformation
-                </a>
-              </li>
-            </ul>
-          </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="lost.html">Lost</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, dolorem eius
-    beatae omnis ullam dolores aspernatur maiores deleniti. Quae sed consequatur
-    maiores quia impedit nulla quidem quibusdam quaerat tempore. Nostrum,
-    deleniti enim facilis aperiam iste culpa architecto nisi sint explicabo
-    animi et, ad necessitatibus odit maiores eaque ab. Quaerat adipisci tempore
-    distinctio, dignissimos nostrum nisi corporis assumenda iste! Ipsam maxime
-    ratione adipisci voluptates cupiditate odit quibusdam rem optio architecto
-    necessitatibus expedita nam, exercitationem error? Officiis nesciunt totam
-    dolores quisquam. Magni at voluptas soluta adipisci sequi nesciunt maxime
-    placeat incidunt debitis nulla dicta nemo, dolorum, minima officia iure aut
-    consequuntur error repellat corrupti laudantium. Commodi veniam, vitae
-    eligendi necessitatibus aut vel reprehenderit fugit obcaecati blanditiis
-    culpa sapiente alias, aliquid quibusdam est minima temporibus soluta dicta
-    provident suscipit. Corrupti, ipsum atque. Voluptatibus est nihil quisquam,
-    impedit harum repellat alias, nisi reiciendis ratione distinctio dignissimos
-    vero ea minus reprehenderit consectetur. Quos ipsum enim, laudantium
-    molestias dicta vitae, dignissimos hic amet harum laborum suscipit, libero
-    quasi a ullam porro eveniet maxime optio itaque magni necessitatibus
-    quisquam id. Optio quisquam neque distinctio amet quaerat iste sint et
-    voluptatum dicta velit. Animi quas aspernatur consequatur error dolorum
-    neque eum ea doloremque, minus fuga beatae voluptatem earum dignissimos
-    iusto quasi tempora fugiat porro id sapiente? Consectetur inventore
-    voluptatum deserunt temporibus deleniti est itaque sequi incidunt rerum,
-    ducimus aspernatur numquam nam? Illum facere, sequi reiciendis minus enim
-    suscipit libero amet veniam eligendi voluptate accusantium commodi provident
-    sint et, itaque corporis. Soluta, neque? Repellat aspernatur blanditiis,
-    consectetur non odit delectus nihil ut voluptatibus quibusdam. Magnam iure
-    delectus nulla eligendi, beatae deserunt cumque aliquid quos nobis corporis
-    illo, optio fuga impedit, nihil deleniti recusandae adipisci repudiandae
-    inventore quia ea eius obcaecati dolorem exercitationem sunt? Excepturi
-    omnis perferendis voluptatibus commodi! Eaque minima eos molestias et quo
-    tenetur non quisquam dignissimos ad maxime dicta veritatis vitae, nam neque
-    laudantium perspiciatis, praesentium error perferendis repellendus. Beatae
-    unde sint neque consectetur ab? Consectetur optio totam quidem veritatis
-    fuga tempora, distinctio dolorem obcaecati inventore sed nulla dolorum illo
-    ducimus accusantium cupiditate, quos deserunt in enim. A, odit ea?
-    Repudiandae quod molestiae iusto fugiat, tempora vitae officiis ipsum quidem
-    nobis sequi quos enim fugit natus nesciunt quis, atque adipisci fuga odio
-    dolores quisquam dolorum corrupti. Reiciendis alias earum pariatur
-    necessitatibus odit provident minus eius ullam iusto rerum similique autem
-    quos ducimus assumenda obcaecati aliquid explicabo dignissimos vel, non
-    aliquam delectus nemo blanditiis! Recusandae voluptas cupiditate
-    reprehenderit maiores maxime tempore, fugiat aspernatur, non saepe veritatis
-    accusamus! Ipsa omnis sapiente incidunt, quas nulla placeat similique odit
-    explicabo? Nemo, sunt? Placeat odit a similique? Cupiditate eveniet fuga
-    vitae natus cum aspernatur aliquid quod vel porro illum, beatae quidem,
-    accusantium quam distinctio. Nam, expedita reiciendis? Maiores hic
-    dignissimos est deserunt doloribus reiciendis culpa alias voluptate,
-    sapiente odit ipsum ipsa, natus provident rem quidem distinctio suscipit? Et
-    quae dolorem quam culpa magni, quos deleniti necessitatibus quo fugit odio,
-    reprehenderit tempora eius. Pariatur neque, assumenda a dolorem porro
-    debitis! Eum placeat autem quia, alias molestiae in reiciendis cum
-    dignissimos dolorum vero repellat consequuntur laboriosam corporis voluptate
-    magnam esse quaerat. Consectetur repellendus deleniti corrupti ipsa! Eaque
-    totam saepe, aliquid laborum perspiciatis culpa, ex esse optio fugit ipsam
-    distinctio quis accusamus autem! Quasi et est beatae error voluptas quos
-    velit fugit vitae expedita nulla consequatur tenetur, repudiandae omnis
-    numquam natus reiciendis saepe, sit minima cupiditate, maiores blanditiis
-    repellendus? Eligendi nemo similique iure dolore perferendis, ullam odit.
-    Esse architecto culpa unde nostrum doloribus alias sit laboriosam dicta,
-    error perferendis cupiditate eveniet corporis distinctio suscipit
-    voluptatibus illum? Unde natus, similique enim itaque dolorem, dignissimos
-    quae recusandae nemo dolore laboriosam quam explicabo blanditiis.
-    Consequatur dignissimos sint odio sunt reprehenderit dolores labore?
-    Delectus veniam, voluptas numquam inventore accusamus asperiores molestiae
-    unde reprehenderit dolorem necessitatibus repudiandae a deserunt voluptates
-    quod debitis incidunt aliquid expedita omnis? Illo aut totam enim minus
-    aliquid, id deleniti quasi est esse saepe pariatur, veritatis laudantium
-    autem quas fuga beatae nulla voluptatibus quisquam ex eligendi excepturi in
-    voluptatum accusamus eveniet? Est iste excepturi optio ut explicabo repellat
-    libero exercitationem nostrum non ex sit sint dignissimos quisquam, commodi
-    nobis atque suscipit saepe quae distinctio itaque error qui sed enim.
-    Incidunt maiores quae repellendus sapiente dolores, at impedit quaerat sed
-    natus, eveniet ipsum repudiandae! Esse eaque error quasi eligendi, quidem
-    corporis ad. Distinctio, amet corporis vero eum sint, iste fugiat blanditiis
-    id laudantium illum itaque dolores. Necessitatibus ipsam, dicta nulla cum
-    omnis recusandae doloremque? Quaerat ipsam cupiditate eum nam dolores nisi
-    soluta perferendis? Totam animi assumenda fugiat facere ratione sunt iusto
-    ipsa vel officiis culpa nobis quae, provident ex ut voluptatibus.
-    Laboriosam, saepe! Vel quas ex aperiam? Earum, maxime. Quos harum recusandae
-    dolores, aliquid excepturi dolor cumque fugit perspiciatis magnam nemo nulla
-    repellat perferendis officiis, nihil molestiae non voluptates! Soluta
-    doloribus, maxime modi alias, quos iste non error asperiores quam magnam
-    quia, blanditiis illum doloremque autem! Possimus, dolore voluptatibus
-    cupiditate perspiciatis alias nobis quod odio praesentium autem doloribus
-    quibusdam reiciendis recusandae pariatur dignissimos culpa sapiente, dolorum
-    iusto sequi nesciunt excepturi maiores facere ullam ad. Saepe doloremque
-    quis optio facere mollitia inventore ut placeat ea totam ex? Minus, quam.
-    Excepturi accusamus blanditiis eaque quod, quasi vitae nam vero qui illum
-    obcaecati sunt necessitatibus fugiat neque velit laboriosam esse. Neque
-    harum quasi optio voluptas dolorem impedit inventore laudantium non quam,
-    accusamus id, nam eligendi aut ullam iste. Et blanditiis unde suscipit
-    similique assumenda inventore, modi vitae praesentium fuga nulla! Quia
-    cumque possimus pariatur corporis architecto fugiat dicta tempora atque
-    optio incidunt! Nesciunt odit inventore commodi repellendus ex excepturi
-    esse perferendis dolores neque eligendi nihil nobis nemo placeat laborum,
-    dolore mollitia, possimus enim maxime vel pariatur quia ullam tenetur
-    quaerat! Quod, nulla. Debitis eos velit voluptatum dolor, delectus deleniti,
-    quod tenetur omnis incidunt illo nihil illum labore, reprehenderit obcaecati
-    cumque neque magni et perspiciatis nam. Accusantium quos molestias similique
-    fugiat optio nihil, animi natus quis necessitatibus facilis, tempora id
-    totam ratione sint! Earum autem, repellat impedit in reiciendis, aspernatur
-    tempora sapiente illum maiores dicta pariatur incidunt voluptas? Molestiae
-    voluptatem sapiente adipisci autem sit. Expedita ea optio voluptas molestiae
-    laboriosam at?
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/nav.js"></script>
+    <div class="container mt-4">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-3">
+              <div class="card">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                  <h5 class="card-title">Found Form</h5>
+                  <p class="card-text">On clicking this you can see the found form down and give your details so that they will get published and you can view in founded items tab.</p>
+                  <button class="btn btn-primary">Found form</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                
+                <div class="card-body">
+                    <h5 class="card-title">Items Found</h5>
+                    <p class="card-text">On clicking this you can see the items that all founded down listed here.</p>
+                    <br>
+                    <br>
+                    <button class="btn btn-primary">Items found</button>
+                </div>
+              </div>
+            </div>
+    </div>
+    <div class="formhere"></div>
+    <div class="itemshere"></div>
   </body>
 </html>

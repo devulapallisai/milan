@@ -13,4 +13,5 @@ The app is designed to solve the issue of lost and found items and cab-sharing i
    the list of items that are lost and not found by anyone.
 4) When we click on the cab-sharing card in the index page(index.html), we can fill up a google form to describe the date of cab-sharing,
    the destination and arrival place of the cab along with the contact of the passenger. 
-5) In the cab-sharing page(cabsharing.html), we can also filter the passengers by the date at which they wish to share their cab.
+5) In the cab-sharing page(cabsharing.html), we can also filter the passengers by the date at which they wish to share their cab so that they can view the possible members who    can they contact and their is a whatsapp contact field  on clicking it you would redirect to whatsapp chat with that member. 
+6) We have done it as PWA and sometimes it might give network error then reload the page even then it persists then press Ctrl+Shft+R.

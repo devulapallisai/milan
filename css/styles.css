@@ -1,0 +1,50 @@
+.card{
+    background:rgb(224, 224, 224);
+    width: fit-content;
+    max-height: 300px;
+    margin: auto;
+    border-radius: 5px ;
+    margin-bottom: 10px;
+}
+
+.card-title{
+    font-weight:bold;
+    font-family: 'Montserrat', sans-serif;
+}
+.card-body{
+    font-family: 'Montserrat', sans-serif;
+    width: fit-content;
+    min-height: 250px;
+    align-self: center;
+    text-align: left;
+}
+.card-text{
+    margin-bottom:50px;
+}
+
+.cab-card{
+    height:300px ;
+}
+nav{
+    background-color:black;
+}
+.btn{
+    background-color:rgb(27, 24, 24);
+    position:relative;
+    bottom:10px;
+    text-align: center;
+}
+.formhere{
+    font-weight: bold;
+    padding:1em;
+    border-radius: 5px;
+    max-width:fit-content;
+    background:rgb(224, 224, 224);
+    margin:auto;
+}
+
+.flink{
+    position:relative;
+    bottom:2px;
+} 
+

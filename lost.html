@@ -16,6 +16,7 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/styles.css">
     <style>
       * {
         overflow-x: hidden;
@@ -30,7 +31,7 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand text-white" href="index.html">Student Helper</a>
         <button
@@ -72,7 +73,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Lost Form</h5>
                   <p class="card-text">On clicking button you can see the lost form down and give your details so that they will get published and you can view in lost items tab.</p>
-                  <button class="btn btn-primary" onclick="lostform()">Lost form</button>
+                  <button class="btn btn-secondary" onclick="lostform()">Lost form</button>
                 </div>
               </div>
             </div>
@@ -85,7 +86,7 @@
                     <p class="card-text">On clicking button you can see the items that all lost items down listed here.</p>
                     <br>
                     <br>
-                    <button class="btn btn-primary" onclick="listhere()">Items Lost</button>
+                    <button class="btn btn-secondary" onclick="listhere()">Items Lost</button>
                 </div>
               </div>
             </div>
@@ -94,7 +95,7 @@
     <br>    
 
     <div class="formhere" id="formhere">
-        Link for Google form - <a href="https://forms.gle/rQZMYqdDXacrMsB8A" target="_blank">Click Here</a>
+        Fill the Lost Item Form <a class="btn btn-secondary flink" href="https://forms.gle/rQZMYqdDXacrMsB8A" target="_blank">Click Here</a>
     </div>
     <div class="itemshere" id="itemshere">
         <h1 class="m-2 text-center" style="overflow: hidden">Items lost</h1>

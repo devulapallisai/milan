@@ -3,9 +3,6 @@ const assets = [
   "app.webmanifest",
   "sw-register.js",
   "serviceworker.js",
-  "/found.html",
-  "/lost.html",
-  "/cabsharing.html",
   "css/index.css",
   "css/style.css",
   "css/home.css",
@@ -23,6 +20,9 @@ const assets = [
   "images/icon96.png",
   "images/icon128.png",
   "images/icon192.png",
+  "/found.html",
+  "/lost.html",
+  "/cabsharing.html",
 ];
 self.addEventListener("install", (event) => {
   caches.open("assets").then((cache) => {

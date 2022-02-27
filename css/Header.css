@@ -1,0 +1,100 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.icon1 {
+  font-size: 24px;
+}
+/* * {
+    overflow-x: hidden;
+  } */
+.hoverme {
+  margin-left: 12px;
+}
+.hoverme:hover {
+  background-color: rgba(133, 146, 160, 0.514);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: "Poppins";
+}
+button:focus,
+button:active {
+  outline: none;
+}
+@media screen and (max-width: 892px) {
+  .banner {
+    display: none;
+  }
+  .hoverme:hover {
+    background-color: rgba(133, 146, 160, 0.514);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .hoverme {
+    margin-left: 0px;
+  }
+}
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: rgb(8, 0, 0);
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham3 .top {
+  stroke-dasharray: 40 130;
+}
+.ham3 .middle {
+  stroke-dasharray: 40 140;
+}
+.ham3 .bottom {
+  stroke-dasharray: 40 205;
+}
+.ham3.active .top {
+  stroke-dasharray: 75 130;
+  stroke-dashoffset: -63px;
+}
+.ham3.active .middle {
+  stroke-dashoffset: -102px;
+}
+.ham3.active .bottom {
+  stroke-dasharray: 110 205;
+  stroke-dashoffset: -86px;
+}
+@media screen and (max-width: 576px) {
+  .targetit {
+    display: none;
+  }
+  .ham {
+    transform: scale(0.7);
+    margin-left: 25px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .ham {
+    transform: scale(0.6);
+  }
+}

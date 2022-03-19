@@ -2,7 +2,7 @@
     "name":"Student Helper - an Webapp for IITH Students",
     "short_name":"Student helper",
     "description":"An web-app where you can add found/lost items so that all other students can see and help you.",
-    "start_url":"/",
+    "start_url":"https://devulapallisai.github.io/milan/",
     "display":"standalone",
     "background_color":"black",
     "theme_color":"black",
